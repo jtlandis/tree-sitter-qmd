@@ -1,5 +1,11 @@
 
 (fenced_code
   (fence_lang
-    (lang) @injection.language)
-  (lang_chunk) @injection.content)
+    (lang) @language)
+  (lang_chunk) @content)
+
+(fenced_code
+  (fence_lang
+    (attrs
+      (lang) @language)))
+  (lang_chunk) @content)

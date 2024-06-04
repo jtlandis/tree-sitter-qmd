@@ -142,7 +142,7 @@ module.exports = grammar({
     _word: ($) => /[a-zA-Z\-]+/,
     _whitespace: ($) => /[ \t]+/,
     _num: ($) => /[0-9]+/,
-    _symbols: ($) => /[\~\\\=\.\!\^\(\)\+\`\?\*<>"]/,
+    _symbols: ($) => /[\~\\\=\.\!\^\(\)\+\`\?\*<>{}"]/,
     _text: ($) => choice($._word, $._whitespace, $._num),
     line: ($) => prec.right(seq(repeat($._text), "\n")),
     text: ($) => prec.right(repeat1($._text)),
