@@ -7,5 +7,5 @@
 (fenced_code
   (fence_lang
     (attrs
-      (lang) @language)))
+      (lang) @language))
   (lang_chunk) @content)
