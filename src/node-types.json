@@ -1,0 +1,371 @@
+[
+  {
+    "type": "attr_class",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "attr_id",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "attr_keyval",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "attrs",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "attr_class",
+          "named": true
+        },
+        {
+          "type": "attr_id",
+          "named": true
+        },
+        {
+          "type": "attr_keyval",
+          "named": true
+        },
+        {
+          "type": "chunk_name",
+          "named": true
+        },
+        {
+          "type": "lang",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "bold",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "text",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "fence_lang",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "attrs",
+          "named": true
+        },
+        {
+          "type": "lang",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "fenced_code",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "attrs",
+          "named": true
+        },
+        {
+          "type": "fence_lang",
+          "named": true
+        },
+        {
+          "type": "fenced_code_delim",
+          "named": true
+        },
+        {
+          "type": "lang_chunk",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "header1",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "header_content",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "header2",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "header_content",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "header3",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "header_content",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "header4",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "header_content",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "header5",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "header_content",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "header_content",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "lang_chunk",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "section",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "attrs",
+          "named": true
+        },
+        {
+          "type": "bold",
+          "named": true
+        },
+        {
+          "type": "fenced_code",
+          "named": true
+        },
+        {
+          "type": "header1",
+          "named": true
+        },
+        {
+          "type": "header2",
+          "named": true
+        },
+        {
+          "type": "header3",
+          "named": true
+        },
+        {
+          "type": "header4",
+          "named": true
+        },
+        {
+          "type": "header5",
+          "named": true
+        },
+        {
+          "type": "section",
+          "named": true
+        },
+        {
+          "type": "section1_content",
+          "named": true
+        },
+        {
+          "type": "text_body",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "section1_content",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "bold",
+          "named": true
+        },
+        {
+          "type": "fenced_code",
+          "named": true
+        },
+        {
+          "type": "section",
+          "named": true
+        },
+        {
+          "type": "text_body",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "section",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "text",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "text_body",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "text",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "\n",
+    "named": false
+  },
+  {
+    "type": "#",
+    "named": false
+  },
+  {
+    "type": "# ",
+    "named": false
+  },
+  {
+    "type": "## ",
+    "named": false
+  },
+  {
+    "type": "### ",
+    "named": false
+  },
+  {
+    "type": "#### ",
+    "named": false
+  },
+  {
+    "type": "##### ",
+    "named": false
+  },
+  {
+    "type": "**",
+    "named": false
+  },
+  {
+    "type": ".",
+    "named": false
+  },
+  {
+    "type": "=",
+    "named": false
+  },
+  {
+    "type": "chunk_name",
+    "named": true
+  },
+  {
+    "type": "fenced_code_delim",
+    "named": true
+  },
+  {
+    "type": "lang",
+    "named": true
+  },
+  {
+    "type": "{",
+    "named": false
+  },
+  {
+    "type": "}",
+    "named": false
+  }
+]
