@@ -12,6 +12,36 @@
   {
     "type": "attr_keyval",
     "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "attr_value",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "attr_value",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "attr_value_character",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "attr_value_character",
+    "named": true,
     "fields": {}
   },
   {
@@ -310,6 +340,10 @@
   },
   {
     "type": "\n",
+    "named": false
+  },
+  {
+    "type": "\"",
     "named": false
   },
   {

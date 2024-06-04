@@ -113,8 +113,20 @@ module.exports = grammar({
 
     attr_id: ($) => seq("#", $._label),
     attr_class: ($) => seq(".", $._label),
-    attr_keyval: ($) => seq($._word, "=", /[^( ,})]+/),
-
+    attr_keyval: ($) =>
+      seq(
+        $._word,
+        optional($._whitespace),
+        "=",
+        optional($._whitespace),
+        $.attr_value,
+      ),
+    attr_value: ($) =>
+      choice(
+        $.attr_value_character,
+        prec.right(repeat1(choice($._word, $._num))),
+      ),
+    attr_value_character: ($) => seq('"', repeat($._text), '"'),
     bold: ($) => seq("**", $.text, "**"),
     fenced_code_delim: ($) => "```",
     fenced_code: ($) =>
