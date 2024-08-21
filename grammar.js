@@ -133,7 +133,7 @@ module.exports = grammar({
       seq(
         $.fenced_code_delim,
         $.fence_lang,
-        optional(alias($._code, $.lang_chunk)),
+        optional(alias($._code_chunk, $.lang_chunk)),
         $.fenced_code_delim,
         optional($.attrs),
       ),
@@ -154,6 +154,7 @@ module.exports = grammar({
     _word: ($) => /[a-zA-Z\-]+/,
     _whitespace: ($) => /[ \t]+/,
     _num: ($) => /[0-9]+/,
+    _code_chunk: ($) => /[^(```)]+/,
     _symbols: ($) => /[\~\\\=\.\!\^\(\)\+\`\?\*<>{}"]/,
     _text: ($) => choice($._word, $._whitespace, $._num),
     line: ($) => prec.right(seq(repeat($._text), "\n")),
